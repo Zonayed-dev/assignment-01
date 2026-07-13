@@ -317,7 +317,7 @@ footer.foot {
 
 .foot-parent {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -339,4 +339,304 @@ footer.foot {
     color: #475569;
     font-size: 8px;
     margin: 0;
+}
+
+/* ai generated part */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* Base Section Variables */
+.hackathon-spotlight {
+    --bg-dark: #0a0f1d;
+    --text-light: #f8fafc;
+    --text-muted: #94a3b8;
+    --neon-cyan: #06b6d4;
+    --neon-purple: #a855f7;
+    --glass-bg: rgba(15, 23, 42, 0.45);
+    --glass-border: rgba(255, 255, 255, 0.07);
+
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hackathon-spotlight * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hackathon-spotlight .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+/* Decorative Ambient Lights */
+.hackathon-spotlight .glow-bg {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hackathon-spotlight .glow-purple {
+    top: -10%;
+    right: -5%;
+    background: var(--neon-purple);
+}
+
+.hackathon-spotlight .glow-cyan {
+    bottom: -10%;
+    left: -5%;
+    background: var(--neon-cyan);
+}
+
+/* Typography & Header */
+.hackathon-spotlight .section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.hackathon-spotlight .badge {
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    color: var(--neon-cyan);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.hackathon-spotlight .section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.hackathon-spotlight .text-gradient {
+    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hackathon-spotlight .section-subtitle {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+/* Micro Countdown Timer */
+.hackathon-spotlight .countdown-wrapper {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hackathon-spotlight .countdown-label {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--neon-cyan);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.hackathon-spotlight .countdown-timer {
+    display: inline-flex;
+    align-items: center;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 12px 28px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.hackathon-spotlight .time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60px;
+}
+
+.hackathon-spotlight .time-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.hackathon-spotlight .time-unit {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+
+.hackathon-spotlight .time-divider {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px;
+    padding-bottom: 18px;
+}
+
+/* Glassmorphism Cards Grid */
+.hackathon-spotlight .tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.hackathon-spotlight .track-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 35px 30px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.hackathon-spotlight .track-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(6, 182, 212, 0.3);
+    box-shadow: 0 12px 30px rgba(6, 182, 212, 0.08);
+}
+
+/* Highlighting the center card slightly for premium visual balance */
+.hackathon-spotlight .highlighted-card {
+    border-color: rgba(168, 85, 247, 0.25);
+}
+
+.hackathon-spotlight .highlighted-card:hover {
+    border-color: rgba(168, 85, 247, 0.5);
+    box-shadow: 0 12px 30px rgba(168, 85, 247, 0.08);
+}
+
+/* Card Icons */
+.hackathon-spotlight .card-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.hackathon-spotlight .card-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.hackathon-spotlight .icon-cyan {
+    background: rgba(6, 182, 212, 0.1);
+    color: var(--neon-cyan);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.hackathon-spotlight .icon-purple {
+    background: rgba(168, 85, 247, 0.1);
+    color: var(--neon-purple);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.hackathon-spotlight .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.hackathon-spotlight .card-text {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+/* CTA Button Placement */
+.hackathon-spotlight .cta-wrapper {
+    text-align: center;
+}
+
+.hackathon-spotlight .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+    color: #040814;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 16px 36px;
+    border-radius: 30px;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(6, 182, 212, 0.25);
+}
+
+.hackathon-spotlight .btn-primary:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 28px rgba(168, 85, 247, 0.4);
+}
+
+.hackathon-spotlight .btn-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    transition: transform 0.2s;
+}
+
+.hackathon-spotlight .btn-primary:hover .btn-icon {
+    transform: translateX(4px);
+}
+
+/* Responsive Design Queries */
+@media (max-width: 992px) {
+    .hackathon-spotlight .tracks-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hackathon-spotlight .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hackathon-spotlight {
+        padding: 60px 16px;
+    }
+
+    .hackathon-spotlight .tracks-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .hackathon-spotlight .section-title {
+        font-size: 2.2rem;
+    }
+
+    .hackathon-spotlight .countdown-timer {
+        padding: 10px 18px;
+    }
+
+    .hackathon-spotlight .time-number {
+        font-size: 1.6rem;
+    }
 }
