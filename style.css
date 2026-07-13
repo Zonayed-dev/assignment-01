@@ -74,8 +74,7 @@ ul li {
     padding: 40px 20px;
     height: 26rem;
     width: 100%;
-    max-width: 1552px;
-    height: 786px;
+    min-height: 70vh;
 
 }
 
@@ -124,7 +123,7 @@ ul li {
 }
 
 section h1 {
-    color: white;
+    color: #111827;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 600;
@@ -345,18 +344,18 @@ footer.foot {
    DEVCONF 2026: HACKATHON SPOTLIGHT SECTION
    ========================================== */
 .hackathon-spotlight {
-  background-color: #0f172a;
-  color: #f8fafc;
-  font-family: system-ui, -apple-system, sans-serif;
-  padding: 80px 20px;
-  position: relative;
-  
-  /* These lines force the page to treat this as a fresh row, fixing the squished header */
-  width: 100% !important;
-  display: block !important;
-  clear: both !important;
-  float: none !important;
-  box-sizing: border-box;
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: system-ui, -apple-system, sans-serif;
+    padding: 80px 20px;
+    position: relative;
+
+    /* These lines force the page to treat this as a fresh row, fixing the squished header */
+    width: 100% !important;
+    display: block !important;
+    clear: both !important;
+    float: none !important;
+    box-sizing: border-box;
 }
 
 .hackathon-spotlight .section-container {
