@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: white;
+}
+
+.logo-1 img {
+    height: 40px;
+    width: auto;
+    display: block;
+
+}
+
+nav {
+    margin-top: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    margin-left: auto;
+    max-width: 1200px;
+    padding: 0;
+    align-items: center;
+}
+
+ul {
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    gap: 25px;
+}
+
+ul li {
+    color: #4b5563;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cmn-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 12px 22px;
+    margin: auto;
+    margin-right: 40px;
+
+}
+
+.hero-section-parent {
+    margin-top: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./assets/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    height: 26rem;
+}
+
+.write {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.write h1{
+font-size: 3.5rem;
+font-weight: 700;
+margin-bottom: 10px;
+margin-top: 1.5rem;
+}
+
+.write h1 em {
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 1px;
+}
+.write p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;              
+    color: #e5e7eb;
+    margin-bottom: 8rem;
+}
+
+.hero-btn
+{
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 14px 32px;
+    margin: 0 auto;
+    width: fit-content;
+}
