@@ -355,11 +355,6 @@ footer.foot {
     box-sizing: border-box;
 }
 
-.hackathon-spotlight * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 .hackathon-spotlight .section-container {
     max-width: 1140px;
