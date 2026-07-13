@@ -341,35 +341,20 @@ footer.foot {
     margin: 0;
 }
 
-/* ai generated part */
 /* ==========================================
    DEVCONF 2026: HACKATHON SPOTLIGHT SECTION
    ========================================== */
 .hackathon-spotlight {
-    --bg-dark: #0f172a;
-    /* Deep dark slate to match your theme */
-    --text-light: #f8fafc;
-    /* Off-white for crisp readability */
-    --text-muted: #94a3b8;
-    /* Soft gray for descriptions */
-    --neon-cyan: #06b6d4;
-    /* Electric cyan accent */
-    --neon-purple: #a855f7;
-    /* Neon purple accent */
-    --glass-bg: rgba(30, 41, 59, 0.45);
-    /* Translucent overlay background */
-    --glass-border: rgba(255, 255, 255, 0.08);
-    /* Clean, subtle borders */
-
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: system-ui, -apple-system, sans-serif;
     padding: 80px 20px;
     position: relative;
-    overflow: hidden;
+    width: 100%;
+    clear: both;
+    box-sizing: border-box;
 }
 
-/* Reset boundaries for the section wrapper */
 .hackathon-spotlight * {
     box-sizing: border-box;
     margin: 0;
@@ -379,35 +364,8 @@ footer.foot {
 .hackathon-spotlight .section-container {
     max-width: 1140px;
     margin: 0 auto;
-    position: relative;
-    z-index: 10;
 }
 
-/* Ambient glow backdrops */
-.hackathon-spotlight .glow-bg {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    filter: blur(130px);
-    opacity: 0.12;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.hackathon-spotlight .glow-purple {
-    top: -10%;
-    right: -5%;
-    background: var(--neon-purple);
-}
-
-.hackathon-spotlight .glow-cyan {
-    bottom: -10%;
-    left: -5%;
-    background: var(--neon-cyan);
-}
-
-/* Typography & Headers */
 .hackathon-spotlight .section-header {
     text-align: center;
     max-width: 650px;
@@ -417,7 +375,7 @@ footer.foot {
 .hackathon-spotlight .badge {
     background: rgba(6, 182, 212, 0.1);
     border: 1px solid rgba(6, 182, 212, 0.3);
-    color: var(--neon-cyan);
+    color: #06b6d4;
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -431,34 +389,29 @@ footer.foot {
 .hackathon-spotlight .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
     margin-bottom: 14px;
-    line-height: 1.2;
+    color: #ffffff;
 }
 
 .hackathon-spotlight .text-gradient {
-    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #06b6d4;
 }
 
 .hackathon-spotlight .section-subtitle {
-    color: var(--text-muted);
+    color: #94a3b8;
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
-/* Countdown Block Setup */
 .hackathon-spotlight .countdown-wrapper {
     text-align: center;
     margin-bottom: 50px;
 }
 
 .hackathon-spotlight .countdown-label {
-    color: var(--neon-cyan);
+    color: #06b6d4;
     font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
     margin-bottom: 12px;
     font-weight: 600;
 }
@@ -466,12 +419,10 @@ footer.foot {
 .hackathon-spotlight .countdown-timer {
     display: inline-flex;
     align-items: center;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 10px 24px;
     border-radius: 12px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
 }
 
 .hackathon-spotlight .time-block {
@@ -484,25 +435,23 @@ footer.foot {
 .hackathon-spotlight .time-number {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--text-light);
+    color: #ffffff;
 }
 
 .hackathon-spotlight .time-unit {
     font-size: 0.7rem;
-    color: var(--text-muted);
+    color: #94a3b8;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-top: 2px;
 }
 
 .hackathon-spotlight .time-divider {
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.2);
     margin: 0 8px;
-    padding-bottom: 14px;
+    position: relative;
+    top: -4px;
 }
 
-/* Responsive Grid Configuration */
 .hackathon-spotlight .tracks-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -510,88 +459,47 @@ footer.foot {
     margin-bottom: 45px;
 }
 
-/* Glassmorphism Dynamic Cards */
 .hackathon-spotlight .track-card {
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
     padding: 30px 25px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s;
+    text-align: left;
 }
 
-.hackathon-spotlight .track-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(6, 182, 212, 0.35);
-}
-
-.hackathon-spotlight .highlighted-card {
-    border-color: rgba(168, 85, 247, 0.25);
-}
-
-.hackathon-spotlight .highlighted-card:hover {
-    border-color: rgba(168, 85, 247, 0.5);
-}
-
-/* Card Icons */
 .hackathon-spotlight .card-icon {
     font-size: 2rem;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
-}
-
-.hackathon-spotlight .icon-cyan {
-    background: rgba(6, 182, 212, 0.1);
-    border: 1px solid rgba(6, 182, 212, 0.2);
-}
-
-.hackathon-spotlight .icon-purple {
-    background: rgba(168, 85, 247, 0.1);
-    border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 .hackathon-spotlight .card-title {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .hackathon-spotlight .card-text {
-    color: var(--text-muted);
+    color: #94a3b8;
     font-size: 0.95rem;
     line-height: 1.5;
 }
 
-/* CTA Wrapper & Interactive Button */
 .hackathon-spotlight .cta-wrapper {
     text-align: center;
 }
 
 .hackathon-spotlight .btn-primary {
     display: inline-block;
-    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+    background: linear-gradient(135deg, #06b6d4, #a855f7);
     color: #0f172a;
     font-weight: 600;
     text-decoration: none;
     padding: 14px 32px;
     border-radius: 25px;
     font-size: 1rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2);
 }
 
-.hackathon-spotlight .btn-primary:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.35);
-}
-
-/* Mobile Responsiveness Viewports */
 @media (max-width: 992px) {
     .hackathon-spotlight .tracks-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -599,16 +507,7 @@ footer.foot {
 }
 
 @media (max-width: 768px) {
-    .hackathon-spotlight {
-        padding: 60px 16px;
-    }
-
     .hackathon-spotlight .tracks-grid {
         grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .hackathon-spotlight .section-title {
-        font-size: 2rem;
     }
 }
